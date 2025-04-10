@@ -1,4 +1,14 @@
 @import "tailwindcss";
+@import "tailwindcss/preflight.css" layer(base);
+@theme {
+    --color-branco: #F0EAD6;
+    --color-rosinha: #FCB9B2;
+    --color-rosa: #B23A48;
+    --color-vermelho: #520708;
+    --color-marrom: #1A0F02;
+    --color-preto: #0F0E0E;
+}
+
 @keyframes moveDown {
     from{
         background-position-y: 0%;
@@ -8,6 +18,11 @@
     }
 }
 
-body{
-    overflow: hidden;
+@layer base {
+    body{
+        overflow: hidden;
+    }
 }
+
+
+

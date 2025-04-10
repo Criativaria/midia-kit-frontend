@@ -1,13 +1,14 @@
 import { Book } from "./components/book";
 import { Carousel } from "./components/carousel";
+import { Toggle } from "./components/toggle-theme";
 import { BookContextProvider } from "./context/book/book-context-provider";
 import "./tailwind.css";
-// import lines from "./assets/lines.jpeg";
 
 export function App() {
   return (
-    <BookContextProvider maxPage={4}>
-      <div className="w-screen h-screen flex justify-center items-center bg-black">
+    <BookContextProvider maxPage={6}>
+      <Toggle />
+      <div className="flex justify-center items-center">
         <Carousel />
         <Book />
       </div>

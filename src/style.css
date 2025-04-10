@@ -1,0 +1,13 @@
+
+.dark{
+    background-image: url("assets/background-dark-mode.png");
+    background-size: cover;
+}
+.light{
+    background-image: url("assets/background-light-mode.png");
+    background-size: cover;
+}
+
+body{ 
+    transition: background-image 2s linear;
+}

@@ -4,6 +4,7 @@ export type BookContextProps = {
   page: number;
   nextPage: () => void;
   prevPage: () => void;
+  goToPage: (index: number) => void;
 };
 
 export const bookContext = React.createContext<BookContextProps | undefined>(
